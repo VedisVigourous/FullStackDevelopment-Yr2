@@ -83,3 +83,24 @@ if (isPrime) {
 } else {
     console.log(`${number} is NOT a Prime Number`)
 }
+
+
+// Tribonacci Series
+
+let tribnum = 7
+let triFirst = 0
+let triSecond = 0
+let triThird = 1
+
+console.log(`Tribonacci Series up to ${tribnum} terms:`)
+console.log(triFirst)
+console.log(triSecond)
+console.log(triThird)
+
+for (let i = 3; i < tribnum; i++) {
+    let next = triFirst + triSecond + triThird
+    console.log(next)
+    triFirst = triSecond
+    triSecond = triThird
+    triThird = next
+}
