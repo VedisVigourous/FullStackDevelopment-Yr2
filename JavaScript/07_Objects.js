@@ -37,3 +37,10 @@ person.gender = "Male";
 /* Deletion of property
    - Using delete operator */
 delete person.age;
+
+
+person.greet = function greetUser(){
+   console.log("Hello, " + this.name);
+}
+
+person.greet(); 
